@@ -44,8 +44,8 @@ class App extends React.Component{
         <section className="followers-container">
           {this.state.userFollowers.map(item => {
             return(
-              <div className='follower-card'>
-                <img src={item.avatar_url} key={item.id} alt='follower pic'/>
+              <div className='follower-card' key={item.id}>
+                <img src={item.avatar_url} alt='follower pic'/>
                 <h1 key={item.login}>{item.login}</h1>
                 <span className='arrows'></span>
               </div>
