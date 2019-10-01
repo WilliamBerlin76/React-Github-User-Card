@@ -4,6 +4,18 @@
 html {
   background: #E8E7EC;
 }
+.profile-card{
+  background: #29D18E;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.profile-card img{
+  width: 100%
+}
+.profile-card p {
+  padding-bottom: 20px;
+}
 .followers-container{
   display: flex;
   flex-wrap: wrap;
@@ -12,10 +24,23 @@ html {
   margin: 0 auto;
 }
 .follower-card{
-  width: 40%;
+  width: 30%;
   background: #827AE9;
-  margin-top: 25px;
+  margin-bottom: 35px;
+  min-width: 275px;
 }
 .follower-card img{
   width: 100%;
 }
+
+.arrows{
+  position: absolute;
+  content: '';
+  width: 175px;
+  height: 20px;
+  background: red;
+  z-index: 1;
+  transform: skew(0, 10deg);
+  background: #E8E7EC;
+}
+

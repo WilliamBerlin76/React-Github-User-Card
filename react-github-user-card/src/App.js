@@ -47,6 +47,7 @@ class App extends React.Component{
               <div className='follower-card'>
                 <img src={item.avatar_url} key={item.id} alt='follower pic'/>
                 <h1 key={item.login}>{item.login}</h1>
+                <span className='arrows'></span>
               </div>
             )
           })}
